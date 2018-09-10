@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{58DF31C9-F604-4AAF-B9D1-6F8BD75AE1BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HelpDesk.Repositorio</RootNamespace>
+    <AssemblyName>HelpDesk.Repositorio</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>D:\Repositorio\Fluent\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>D:\Repositorio\Fluent\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy2">
+      <HintPath>D:\Repositorio\Fluent\Castle.DynamicProxy2.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>D:\Repositorio\Fluent\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>D:\Repositorio\Fluent\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>D:\Repositorio\Fluent\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>D:\Repositorio\Fluent\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>D:\Repositorio\Fluent\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Caches.SysCache">
+      <HintPath>D:\Repositorio\NHCaches2.1.2GA\NHibernate.Caches.SysCache\NHibernate.Caches.SysCache.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuracao\NHibernateHelper.cs" />
+    <Compile Include="Mapeamento\ChamadoMAP.cs" />
+    <Compile Include="Mapeamento\CidadeMAP.cs" />
+    <Compile Include="Mapeamento\ClienteMAP.cs" />
+    <Compile Include="Mapeamento\ContratoMAP.cs" />
+    <Compile Include="Mapeamento\EstacaoMAP.cs" />
+    <Compile Include="Mapeamento\HistoricoMAP.cs" />
+    <Compile Include="Mapeamento\RepositorioScriptBanco.cs" />
+    <Compile Include="Mapeamento\ScriptBancoMAP.cs" />
+    <Compile Include="RepositorioEstacao.cs" />
+    <Compile Include="Mapeamento\AtualizacaoMAP.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositorioBase.cs" />
+    <Compile Include="RepositorioChamado.cs" />
+    <Compile Include="RepositorioCidade.cs" />
+    <Compile Include="RepositorioCliente.cs" />
+    <Compile Include="RepositorioContrato.cs" />
+    <Compile Include="RepositorioHistorico.cs" />
+    <Compile Include="RepositorioScriptBanco.cs" />
+    <Compile Include="RepositorioAtualizacao.cs" />
+    <Compile Include="RepositorioUsuario.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HelpDesk.Dominio\HelpDesk.Dominio.csproj">
+      <Project>{22F8F597-6437-4B66-A326-CFE23F6EB77A}</Project>
+      <Name>HelpDesk.Dominio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

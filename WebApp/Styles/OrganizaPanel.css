@@ -1,0 +1,117 @@
+﻿
+#organizapanelcidadetudo
+{
+    width: 429px;
+    height: 200px;
+    padding-right: 10px;
+    padding-top: 50px;
+    padding-left: 300px;
+}
+#organizaPanelSoftwaretudo
+{
+    width: 214px;
+    height: 200px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-top: 50px;
+    padding-left: 300px;
+    margin-left: 0px;
+}
+#organizaPanelUsuariotudo
+{
+    padding-left: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#organizaPanelUsuario
+{
+    width: 515px;
+    height: 200px;
+}
+#organizaPanelContrato
+{
+    padding-left: 0px;
+}
+#organizaPanelUsuario
+{
+    padding-left: 20px;
+}
+#organizaPanelCliente
+{
+    padding-left: 2px;
+}
+#OrganizaPanelAlterarChamado
+{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000066;
+    padding-left: 10PX;
+}
+#OrganizaPanelErro
+{
+    float:right;
+    padding-right:100px;
+    width:338px;
+    height:auto;
+    margin-left: 0px;
+}
+#OrganizalabelErro
+{
+    padding-left:10px;
+    width: 258px;
+    margin-left: 0px;
+}
+#organizaLabelErroSoftware
+{
+    width:315px;
+    height:auto;
+    
+    
+}
+#organizaLabelErroCidade
+{
+    width:315px;
+    height:auto;
+}
+#Arruma_login /* mudei aqui,aqui faz com que o texto flutue sobre a imagem  */
+{
+    float:right;
+    padding-top:133px;
+    padding-right:10px;
+    width:202px;
+    height:11px;
+    margin-left: 0px;
+}
+/*#data_hora
+{
+    float:right;
+    color:Black;
+}*/
+
+#div_data_inicial
+{
+    float:left;
+    width:70px;
+    height:15px;
+}
+
+#div_calendario_inicial
+{
+    float:left;
+    width:185px;
+    height:28px;
+}
+
+#organiza_rodape
+{
+    float:left;
+    padding-bottom:50px;
+    padding-left:250px;
+}
+
+
+
+
+
+
+

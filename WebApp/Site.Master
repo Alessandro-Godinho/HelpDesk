@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApp.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/OrganizaPanel.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" language="javascript" src="JQueryValidate/Jquery/jquery-1.7.min.js"></script>
+    <script type="text/javascript" language="javascript" src="JQueryValidate/jquery.validate/jquery.validate.js"></script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+         <div class="title">
+                <%--<h1>
+                    ADMIN HELPDESK
+                </h1>--%>
+                <img src="Images/banner.jpg" style="height: 191px; width: 960px" />
+            </div>
+         <div id="Arruma_login"><br /><br />
+                    <%--arruma login--%>
+                    <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                        <AnonymousTemplate>
+                            [ <a href="~/Account/Login.aspx" id="HeadLoginStatus" runat="server">Log In</a>
+                            ]
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                             <span style="color: White" >Bem vindo
+                                <asp:LoginName Font-Bold="true" ID="HeadLoginName" runat="server" />
+                            </span> [
+                            <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" style="color:Red" LogoutText="Sair" 
+                                LogoutPageUrl="~/" />
+                            ]
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </div>
+        </div>
+
+         <div class="LinkMenu">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false"
+                    IncludeStyleBlock="false" Orientation="Horizontal" Font-Bold="true">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home | " />
+                        <asp:MenuItem NavigateUrl="~/Admin/Default.aspx" Text="Controle de Versão  | " />
+                        <asp:MenuItem Text="Consultar Ocorrências | " Value="Consultas" NavigateUrl="~/Consulta.aspx">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Chamado.aspx" Text="Criar Ocorrências |" Value="Chamado"></asp:MenuItem>
+                         <asp:MenuItem NavigateUrl="~/Register.aspx" Text="Cadastrar Usuarios |" Value="Register"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Manual/Manual.aspx" Text="Manual do Sistema" Value="Manual">
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+        <%--    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Entrar</a> ]
+                    </AnonymousTemplate>--%>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer"><!--Rodape-->
+        <div id="organiza_rodape">
+            © Copyright 2001-2011 Doctus Tecnologia. Todos os direitos reservados</div>
+    </div>
+    </form>
+</body>
+</html>

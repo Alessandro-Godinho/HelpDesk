@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{35DEFAFE-CCA3-48D9-8F8D-2583CE84B2C2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApp</RootNamespace>
+    <AssemblyName>WebApp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>D:\Repositorio\Fluent\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>D:\Repositorio\Fluent\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy2">
+      <HintPath>D:\Repositorio\Fluent\Castle.DynamicProxy2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxEditors.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxGridView.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>D:\Repositorio\Fluent\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>D:\Repositorio\Fluent\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>D:\Repositorio\Fluent\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NHibernate">
+      <HintPath>D:\Repositorio\Fluent\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>D:\Repositorio\Fluent\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="Admin\Cliente.aspx" />
+    <Content Include="Admin\ClienteCadastro.aspx" />
+    <Content Include="Admin\Contrato.aspx" />
+    <Content Include="Admin\ContratoCadastro.aspx" />
+    <Content Include="Admin\Estacao.aspx" />
+    <Content Include="Admin\EstacoesCadastro.aspx" />
+    <Content Include="Admin\ScriptBanco.aspx" />
+    <Content Include="Admin\ScriptBancoCadastro.aspx" />
+    <Content Include="Admin\UsuarioCadastro.aspx" />
+    <Content Include="Admin\Usuario.aspx" />
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\Atualizacao.aspx" />
+    <Content Include="Admin\AtualizacaoCadastro.aspx" />
+    <Content Include="Admin\WebForm1.aspx" />
+    <Content Include="ajax.aspx" />
+    <Content Include="AlterarChamado.aspx" />
+    <Content Include="ChamadoCadastro.aspx" />
+    <Content Include="Chamado.aspx" />
+    <Content Include="Consulta.aspx" />
+    <Content Include="Images\aguarde.gif" />
+    <Content Include="Images\ajax_small.gif" />
+    <Content Include="Images\Alert.png" />
+    <Content Include="Images\banner-admin.jpg" />
+    <Content Include="Images\banner.jpg" />
+    <Content Include="Images\BarraVertical.jpg" />
+    <Content Include="Images\barra_topo.jpg" />
+    <Content Include="Images\Bottom.jpg" />
+    <Content Include="Images\Case.png" />
+    <Content Include="Images\Comment.png" />
+    <Content Include="Images\DatePick.png" />
+    <Content Include="Images\Dir.png" />
+    <Content Include="Images\Directory.png" />
+    <Content Include="Images\DirectoryUp.png" />
+    <Content Include="Images\doctus.png" />
+    <Content Include="Images\doctusbanner.jpg" />
+    <Content Include="Images\Document 2 Edit 2.gif" />
+    <Content Include="Images\Documents Delete.gif" />
+    <Content Include="Images\donwload.gif" />
+    <Content Include="Images\download.jpg" />
+    <Content Include="Images\edtDropDown.gif" />
+    <Content Include="Images\Error.png" />
+    <Content Include="Images\expand.jpg" />
+    <Content Include="Images\expanded.gif" />
+    <Content Include="Images\expanded2.gif" />
+    <Content Include="Images\Favoritos.png" />
+    <Content Include="Images\File.png" />
+    <Content Include="Images\Find.gif" />
+    <Content Include="Images\fundo.jpg" />
+    <Content Include="Images\fundoLogin.jpg" />
+    <Content Include="Images\FundoMenu.jpg" />
+    <Content Include="Images\fundoResposta.jpg" />
+    <Content Include="Images\FundoTopo.jpg" />
+    <Content Include="Images\GaleriaImagem.png" />
+    <Content Include="Images\Icon.ico" />
+    <Content Include="Images\InputError.png" />
+    <Content Include="Images\LogError.png" />
+    <Content Include="Images\LogGeneral.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\LogoDiagrama.jpg" />
+    <Content Include="Images\logo_Novo.png" />
+    <Content Include="Images\LogWarning.png" />
+    <Content Include="Images\menu_fundo_novo.png" />
+    <Content Include="Images\Minus.gif" />
+    <Content Include="Images\minus.jpg" />
+    <Content Include="Images\Minus.png" />
+    <Content Include="Images\Plus.gif" />
+    <Content Include="Images\plus.jpg" />
+    <Content Include="Images\Plus.png" />
+    <Content Include="Images\Ponto.png" />
+    <Content Include="Images\PoweredBy.png" />
+    <Content Include="Images\prop.JPG" />
+    <Content Include="Images\Refresh.png" />
+    <Content Include="Images\relacionadas.png" />
+    <Content Include="Images\Rename.png" />
+    <Content Include="Images\Symbol Check.gif" />
+    <Content Include="Images\Symbol Delete.gif" />
+    <Content Include="Images\tarjaApoioResposta.png" />
+    <Content Include="Images\tarjaPatrocinioLogin.png" />
+    <Content Include="Images\tarjaPatrocinioResposta.png" />
+    <Content Include="Images\topo.jpg" />
+    <Content Include="Images\topo_02.jpg" />
+    <Content Include="Images\Trash.png" />
+    <Content Include="Images\Up.png" />
+    <Content Include="Images\Video.png" />
+    <Content Include="Images\Void.png" />
+    <Content Include="Images\Wait.gif" />
+    <Content Include="Images\zoomin.cur" />
+    <Content Include="Images\zoomout.cur" />
+    <Content Include="Manual\Manual.aspx" />
+    <Content Include="Styles\OrganizaPanel.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="temp\script.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Cliente.aspx.cs">
+      <DependentUpon>Cliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Cliente.aspx.designer.cs">
+      <DependentUpon>Cliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ClienteCadastro.aspx.cs">
+      <DependentUpon>ClienteCadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ClienteCadastro.aspx.designer.cs">
+      <DependentUpon>ClienteCadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Contrato.aspx.cs">
+      <DependentUpon>Contrato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Contrato.aspx.designer.cs">
+      <DependentUpon>Contrato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ContratoCadastro.aspx.cs">
+      <DependentUpon>ContratoCadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ContratoCadastro.aspx.designer.cs">
+      <DependentUpon>ContratoCadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Estacao.aspx.cs">
+      <DependentUpon>Estacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Estacao.aspx.designer.cs">
+      <DependentUpon>Estacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EstacoesCadastro.aspx.cs">
+      <DependentUpon>EstacoesCadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EstacoesCadastro.aspx.designer.cs">
+      <DependentUpon>EstacoesCadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ScriptBanco.aspx.cs">
+      <DependentUpon>ScriptBanco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ScriptBanco.aspx.designer.cs">
+      <DependentUpon>ScriptBanco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ScriptBancoCadastro.aspx.cs">
+      <DependentUpon>ScriptBancoCadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ScriptBancoCadastro.aspx.designer.cs">
+      <DependentUpon>ScriptBancoCadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UsuarioCadastro.aspx.cs">
+      <DependentUpon>UsuarioCadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UsuarioCadastro.aspx.designer.cs">
+      <DependentUpon>UsuarioCadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Usuario.aspx.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Usuario.aspx.designer.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Atualizacao.aspx.cs">
+      <DependentUpon>Atualizacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Atualizacao.aspx.designer.cs">
+      <DependentUpon>Atualizacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AtualizacaoCadastro.aspx.cs">
+      <DependentUpon>AtualizacaoCadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AtualizacaoCadastro.aspx.designer.cs">
+      <DependentUpon>AtualizacaoCadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax.aspx.cs">
+      <DependentUpon>ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax.aspx.designer.cs">
+      <DependentUpon>ajax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AlterarChamado.aspx.cs">
+      <DependentUpon>AlterarChamado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AlterarChamado.aspx.designer.cs">
+      <DependentUpon>AlterarChamado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\AccessDeniedModule.cs" />
+    <Compile Include="Code\NHibernateHttpModule.cs" />
+    <Compile Include="ChamadoCadastro.aspx.cs">
+      <DependentUpon>ChamadoCadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChamadoCadastro.aspx.designer.cs">
+      <DependentUpon>ChamadoCadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chamado.aspx.cs">
+      <DependentUpon>Chamado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chamado.aspx.designer.cs">
+      <DependentUpon>Chamado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta.aspx.cs">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consulta.aspx.designer.cs">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Manual\Manual.aspx.cs">
+      <DependentUpon>Manual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manual\Manual.aspx.designer.cs">
+      <DependentUpon>Manual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HelpDesk.Dominio\HelpDesk.Dominio.csproj">
+      <Project>{22F8F597-6437-4B66-A326-CFE23F6EB77A}</Project>
+      <Name>HelpDesk.Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HelpDesk.Repositorio\HelpDesk.Repositorio.csproj">
+      <Project>{58DF31C9-F604-4AAF-B9D1-6F8BD75AE1BE}</Project>
+      <Name>HelpDesk.Repositorio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Admin.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>26505</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

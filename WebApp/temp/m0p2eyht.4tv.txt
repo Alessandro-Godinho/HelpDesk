@@ -1,0 +1,17 @@
+"    alter table `MovimentoCaixa`
+       add column CodCtRec BIGINT after IdTransf;
+       
+    alter table `MovimentoCaixa` 
+        add index (CodCtRec), 
+        add constraint FKC3776118124C74CB 
+        foreign key (CodCtRec) 
+        references `ContaReceber` (IdContaReceber);
+
+    alter table ParametroFilial
+       add column TransacaoBaixaLiquidacaoTituloDescontado_id BIGINT after TransacaoEntradaSubstituicaoContaReceberPadrao_id;
+       
+    alter table ParametroFilial 
+        add index (TransacaoBaixaLiquidacaoTituloDescontado_id), 
+        add constraint FK4CD3E30C813DAC60 
+        foreign key (TransacaoBaixaLiquidacaoTituloDescontado_id) 
+        references Transacao (IdTransacao);"
